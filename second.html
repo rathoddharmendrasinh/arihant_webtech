@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<style>
+			body {
+			background-color: lightblue;
+			padding: 50px;
+ 			border: 1px solid;
+			}
+		</style>
+		<script>
+		function myfun() {
+		var choice = parseInt(document.getElementById("homepage").value);
+		  if (choice === 1)
+			{
+			location.replace("third.html");
+			}
+		 else if (choice === 2)
+			{
+			location.replace("forth.html");
+			}
+		else if (choice === 3)
+			{
+			location.replace("third.html");
+			}
+		else if (choice === 4)
+			{
+			location.replace("pin_generate.html");
+			}
+		else if (choice === 5)
+			{
+			location.replace("first.html");
+			}
+		   else {
+			window.alert("please enter valid choice");
+			}
+		       }
+		</script>
+	</head>
+	<body>
+		<div class="homepage">
+		  <p><ol> 
+		  	 <li>view balance</li>
+		  	 <li>withdraw</li>
+		   	 <li>change pin</li>
+			 <li>New User</li>
+			 <li>Exit</li>
+		     </ol></p>	
+		</div>	
+		<button onclick="myfun()">Submit</button>
+		<lable for = "text"> </lable>
+		<input type="number" id="choice" placeholder="Enter your choice"></input>
+
+	</body>
+</html>

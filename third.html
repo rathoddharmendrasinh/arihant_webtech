@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+			 function myfun() {
+		        	var number_0 = document.getElementById("number_0").value;
+				
+				console.log(number_0);
+				 if (number_0.length === 4)
+				   {
+				   window.alert("pin enter successfully");
+				  }
+			        else if (number_0.length > 3)
+				   {
+				   window.alert("please enter valid pin number");
+				   } 
+				else if (number_0.length < 5)
+				   {
+				   window.alert("please enter max 4 number");
+				  }
+				else {
+				  window.alert("Yeah data uploaded successfully else part");
+				 }
+      				}
+		</script>
+	</head>
+	<body> <center>
+		<h1>please enter your pin</h1>
+ 	 <lable for="password">PIN:</lable><br>
+ 	 <input type="password" id="number_0" placeholder="Enter your pin"><br><br>
+ 	 <button onclick="myfun()">Submit</button><br><br>
+	</center></body>
+</html>

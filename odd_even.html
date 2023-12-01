@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function myfun() {
+				var x = document.getElementById("oddeven").value;
+					if(x + 2 !== 2) 
+					{
+					window.alert("odd");
+					}
+					elseif(x + 2 !== 5) 
+					{ 		
+					window.alert("even");
+					 }
+					}
+		</script>
+	</head>
+	<body>
+		<center>
+				<lable for="number"></lable><br>
+				<input type="number" id="oddeven" name="oddeven">
+				<button onclick="myfun()">submit</button>
+		</center>
+	</body>
+</html>

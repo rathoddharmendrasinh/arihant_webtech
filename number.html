@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			 function myfun() {
+		        	var name_0 = document.getElementById("name_0").value;
+				var number_1 = document.getElementById("number_1").value;
+				console.log(name_0);
+				console.log(number_1.length);
+				if (number_1.length < 10 || name_0)
+				   {
+				   window.alert("please enter valid mobiel number and name");
+				  }
+				
+				else {
+				  window.alert("Yeah data uploaded successfully else part");
+				 }
+      				}
+		</script>
+	</head>
+	<body> <center>
+ 	 <lable for="name">Name:</lable><br>
+ 	 <input type="text" id="name_0" placeholder="Enter Name"><br>
+ 	 <lable for="number">Phone-Number:</lable><br> 
+  	 <input type="number" id="number_1" placeholder="Enter Number">
+ 	 <button onclick="myfun()">Submit</button>
+	</center></body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+	<head>
+               <script>
+                function myfun() {
+			var name_1 = document.getElementById('name_1').value;
+			var no_1 = parseInt(document.getElementById('no_1').value);
+			console.log(no_1)
+			console.log(name_1)
+			if(name_1 == "" && !no_1)
+			{
+				window.alert("Please enter name and age first");
+			}
+			else if((no_1 > 18 && no_1 < 80) && name_1) {
+			  window.alert("Yeah data uploaded successfully");
+			}
+			else if(no_1 < 18)
+			{
+				window.alert("Please enter age above 18 years");
+			}					
+			else {
+			  window.alert("Yeah data uploaded successfully else part");
+			 } 
+			} 
+				
+		</script>
+	</head>
+	<body>
+		<form><center>
+		<label for="name">Name:</label><br>
+  		<input type="text" id="name_1" name="name"><br>
+		<lable for="no_1">NO.1:</lable><br>
+		<input type="number" id="no_1" name="no_1"><br>
+		
+		<button onclick="myfun()">submit</button>
+ 		</center></form>
+	</body>
+</html>

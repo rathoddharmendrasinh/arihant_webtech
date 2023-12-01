@@ -1,0 +1,30 @@
+<html>
+	<head>
+	        <script>
+			function myfun() {
+			 var amount = document.getElementById("amount").value;
+			       if (amount.length < 6)
+			    		{
+					window.alert("Amount enter successfully!");
+					}
+	 			else if(amount.length > 6)
+					{
+					window.alert("You Have Not enough Money");
+					}
+				else if(amount.length === 6)
+					{
+					window.alert("Amount enter successfully! please wait");
+					}
+				  else  {
+			    		 window.alert("error");
+				        }
+				      }
+		</script>
+	</head>
+	<body>
+		 <h1> Please enter your amount </h1>
+			<lable for ="number"></lable>
+			<input type="number" id="amount" placeholder="--enter amount--">
+			<button onclick="myfun()">submit</button>
+ 	</body>	
+</html>

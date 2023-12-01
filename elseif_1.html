@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script>
+		function myfun() {
+			let no_1 = parseInt(document.getElementById("no_1").value);
+			let no_2 = parseInt(document.getElementById("no_2").value);
+			let no_3 = parseInt(document.getElementById("no_3").value);
+			console.log("no_1");
+			console.log("no_2");
+			console.log("no_3");
+			let x = "Please enter all numbers!";
+			if(no_1 >= 0 && no_2 >= 0 && no_3 >= 0)
+			{                                      			
+				if(no_1 > no_2 && no_1>no_3)
+				{
+				window.alert(no_1);
+				}
+				else if (no_2>no_3 && no_2>no_1)
+			 	{
+				window.alert(no_2);
+				}
+				else
+				{
+				window.alert(no_3);
+			 	}
+			}
+			else
+			{
+			window.alert(x);	
+			}				
+			}
+		</script>
+	</head>
+	<body><center>
+		<lable for = "no_1">No.1:</lable><br>
+		<input type ="number" id="no_1" name="no_1"><br>
+		<lable for ="no_2">No.2:</lable><br>
+		<input type="number" id="no_2" name="no_2"><br>
+		<lable for ="no_3">No.3</lable><br>
+     		<input type="number" id="no_3" name="no_3"><br><br>
+		        
+	</center></body>
+</html>
